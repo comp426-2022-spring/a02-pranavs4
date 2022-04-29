@@ -65,6 +65,7 @@ function coinFlips(flips) {
   return flipArray
 }
 
+
 /** Count multiple flips
  * 
  * Write a function that accepts an array consisting of "heads" or "tails" 
