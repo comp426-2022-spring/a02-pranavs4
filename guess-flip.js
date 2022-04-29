@@ -7,24 +7,36 @@ const call1 = args['call'] || null;
 var flips = flipACoin(call1)
 
 
-if(call1 == null || call1 == undefined) {
+// if(call1 == null || call1 == undefined) {
     
-    console.log("Error: no inputs")
-    console.log('Usage: node guess-flip --call=[heads|tails]')
+//     console.log("Error: no inputs")
+//     console.log('Usage: node guess-flip --call=[heads|tails]')
 
-} else if ( call1 != "tails" && call1 != "heads" ) {
+// } else if ( call1 != "tails" && call1 != "heads" ) {
 
-    console.log("Error: no inputs")
-    console.log('Usage: node guess-flip --call=[heads|tails]')
+//     console.log("Error: no inputs")
+//     console.log('Usage: node guess-flip --call=[heads|tails]')
 
-} else if (call1 == "tails" || call1 == "heads"){
-
-    console.log(flips);
-
-} 
-
-// else {
+// } else if (call1 == "tails" || call1 == "heads"){
 
 //     console.log(flips);
 
-// }
+// } 
+
+// // else {
+
+// //     console.log(flips);
+
+// // }
+
+if(call1 == undefined || call1 == null || (call1 != "heads" || call1 != "tails")) {
+
+    console.log("Error: no inputs\n Usage: node guess-flip --call=[heads||tails]");
+
+}
+
+else {
+    
+    console.log(flips);
+
+}
