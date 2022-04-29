@@ -111,10 +111,10 @@ function flipACoin(call) {
 
   var output = coinFlip();
   if(output == call) {
-    return{ flip: output, call:call, output : "win"}
+    return{ call:call, flip: output, output : "win"}
   }
   else {
-    return{flip:output, call:call, output:"lose"}
+    return{call:call, flip:output, output:"lose"}
   };
 }
 
