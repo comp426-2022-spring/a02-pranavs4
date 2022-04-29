@@ -109,12 +109,12 @@ function countFlips(array) {
 
 function flipACoin(call) {
 
-  var output = coinFlip();
-  if(output == call) {
-    return{ call:call, flip: output, output : "win"}
+  var results = coinFlip();
+  if(results == call) {
+    return{ call:call, flip: results, results : "win"}
   }
   else {
-    return{call:call, flip:output, output:"lose"}
+    return{call:call, flip:results, results:"lose"}
   };
 }
 
