@@ -4,7 +4,14 @@ import minimist from "minimist";
 const args = minimist(process.argv.slice(2))
 args['call'];
 const call = args['call'];
+var flips = flipACoin(call)
 
+
+if(call == null || call != "heads" || call!= "tails") {
+    
+    console.log("Error: no inputs.")
+
+}
 if(call == "tails" || call == "heads"){
 
     console.log(flipACoin(call));
@@ -13,6 +20,6 @@ if(call == "tails" || call == "heads"){
 
 else{
 
-    console.log("Error: no inputs.");
+    console.log(flips);
 
 }
