@@ -17,7 +17,7 @@ if(call == null) {
 
 } else if(call == "tails" || call == "heads"){
 
-    console.log(flips));
+    console.log(flips);
 
 } 
 
