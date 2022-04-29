@@ -7,12 +7,14 @@ const call = args['call'];
 var flips = flipACoin(call)
 
 
-if(call == null) {
+if(call == null || call == undefined) {
     
     console.log("Error: no inputs")
+    console.log('Usage: node guess-flip --call=[heads|tails]')
 
 } else if ( call != "tails" && call != "heads" ) {
 
+    console.log("Error: no inputs")
     console.log('Usage: node guess-flip --call=[heads|tails]')
 
 } else if(call == "tails" || call == "heads"){
