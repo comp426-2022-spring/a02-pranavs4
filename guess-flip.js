@@ -11,7 +11,7 @@ if(call == null) {
     
     console.log("Error: no inputs")
 
-} else if ( call != "tails" || call != "heads" ) {
+} else if ( call != "tails" && call != "heads" ) {
 
     console.log('Usage: node guess-flip --call=[heads|tails]')
 
