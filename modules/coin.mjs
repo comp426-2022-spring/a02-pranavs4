@@ -16,17 +16,19 @@
 
 function coinFlip() {
 
-  let flip = Math.random();
-  // var outcome = "";
-  if (flip > 0.5) {
-    // outcome =  "heads";
-    return "heads";
-  }
-  else {
-    // outcome = "tails";
-    return "tails";
-  }
-  // return outcome;
+  // let flip = Math.random();
+  // // var outcome = "";
+  // if (flip > 0.5) {
+  //   // outcome =  "heads";
+  //   return "heads";
+  // }
+  // else {
+  //   // outcome = "tails";
+  //   return "tails";
+  // }
+  // // return outcome;
+
+  return (Math.random() < 0.5 ? 'heads' : 'tails');  
 }
 
 //console.log(coinFlip))
