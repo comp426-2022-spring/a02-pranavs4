@@ -21,8 +21,8 @@ if(call == null) {
 
 } 
 
-else {
+// else {
 
-    console.log(flips);
+//     console.log(flips);
 
-}
+// }
