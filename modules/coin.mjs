@@ -16,7 +16,18 @@
 
 function coinFlip() {
 
+  let flip = Math.random();
+  var outcome = ""
+  if (flip > 0.5) {
+    outcome =  "heads";
+  }
+  else {
+    outcome = "tails";
+  }
+  return outcome
 }
+
+//console.log(coinFlip))
 
 /** Multiple coin flips
  * 
@@ -39,6 +50,17 @@ function coinFlip() {
 
 function coinFlips(flips) {
 
+  const fliparray = [];
+
+  for(var x = 0; x < flips; x++) {
+    var flip1 = Math.random();
+    if(flip1 < 0.5){
+      fliparray[x] = "heads"
+    } else {
+      fliparray[x] = "tails"
+    } 
+  }
+  return fliparray
 }
 
 /** Count multiple flips
