@@ -55,16 +55,20 @@ function coinFlips(flips) {
   const flipArray = [];
 
   for(var x = 0; x < flips; x++) {
-    let flip1 = Math.random();
-    if(flip1 < 0.5){
-      flipArray[x] = "heads"
-    } else {
-      flipArray[x] = "tails"
-    } 
+  //   let flip1 = Math.random();
+  //   if(flip1 < 0.5){
+  //     flipArray[x] = "heads"
+  //   } else {
+  //     flipArray[x] = "tails"
+  //   } 
+  // }
+  // return flipArray
+    flipArray[x] = coinFlip();
   }
-  return flipArray
-}
 
+  return flipArray;
+
+}
 
 /** Count multiple flips
  * 
